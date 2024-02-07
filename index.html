@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>VALENTINE'S DAY</title>
+ <link
+      rel="icon"
+      type="image/png"
+      sizes="100%"
+      href="https://cdn-icons-png.flaticon.com/512/9444/9444300.png"
+    />
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Georgia, serif;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 23%;
+}
+</style>
+</head>
+<body>
+ <p>
+  Just wondering if you have plans for Feb 14? I’m thinking about doing something with you ;) 
+  Will you be my Valentine?
+ </p>
+<img src="https://media.tenor.com/WQjlw86rlpsAAAAC/muah-kiss.gif">
+</body>
+<title>Buttons</title>
+<style>
+#Button1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#Button2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="Button1">Yes!</button>
+<button id="Button2">No</button>
+<script>
+const Button2 = document.getElementById('Button2');
+let left = 40;
+Button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 48;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('Button1').addEventListener('click', function() {
+alert('HEHE THANKSSS! I LOVE YOU <3');
+});
+</script>
+</body>
+</html>
