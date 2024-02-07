@@ -30,7 +30,6 @@
     font-size: 36px;
     color: #ff3399; /* Rose pink */
     margin-bottom: 20px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Shadow added to the first message */
   }
 
   p {
@@ -55,8 +54,8 @@
   }
 
   button {
-    padding: 15px 30px; /* Larger padding for the buttons */
-    font-size: 20px; /* Increased font size for the buttons */
+    padding: 12px 24px;
+    font-size: 18px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -65,7 +64,6 @@
     outline: none;
     background-color: #ff3399; /* Rose pink */
     color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow added to the buttons */
   }
 
   button:hover {
@@ -92,22 +90,25 @@
 </head>
 <body>
 <div class="container">
-  <h1>HAPPY VALENTINE'S DAY, TANIYA!</h1>
-  <p>Taniya, I was thinking, what if you and me... I mean, if you're free on this Valentine's, will you be my Valentine?</p>
+  <h1>Hey Taniya!</h1>
+  <p>Taniya, I was thinking,if you and me... I mean, if you're free on this Valentine's, will you be my Valentine?</p>
   <div class="gif-container">
     <img src="https://media3.giphy.com/media/ZP7zODs282XveerKMI/giphy.gif?cid=6c09b952lag8kkpz3k714tmh2wz5mck1sxegjd7mivscmr2e&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Valentine's Day Image">
   </div>
-  <button id="yesButton" onclick="yesClicked()">Yes</button>
-  <button id="noButton" onclick="noClicked()">No</button>
+  <button id="yesButton" onclick="playSong()">Yes, I'd love to!</button>
+  <button id="noButton" onclick="noClicked()">not this time.</button>
 </div>
 
 <script>
-  function yesClicked() {
-    alert("I LOVE YOU, TANIYA! ❤️");
+  function playSong() {
+    var mp3Url = 'https://github.com/Raw9k-ai/Happy-Valentine-s-day-/raw/main/Video%20by%20jivan_edit%20%5BC2KQghTvZPM%5D.m4a';
+    var audio = new Audio(mp3Url);
+    audio.play();
+    alert("I love you, Taniya! ❤️");
   }
 
   function noClicked() {
-    alert("Think again, Taniya! ❤️");
+    alert("Think again Taniya.");
     document.getElementById('noButton').classList.add('shake');
     setTimeout(function() {
       document.getElementById('noButton').classList.remove('shake');
