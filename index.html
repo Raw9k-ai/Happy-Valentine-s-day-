@@ -33,9 +33,10 @@
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px; /* Increased font size */
     color: #660033; /* Dark pink text */
     margin-bottom: 30px;
+    font-family: 'Segoe Script', cursive; /* Romantic font */
   }
 
   .gif-container {
@@ -43,7 +44,13 @@
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the gif */
     margin-bottom: 30px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
   }
 
   button {
@@ -86,7 +93,7 @@
   <h1>HAPPY VALENTINE'S DAY, TANIYA!</h1>
   <p>Taniya, I was thinking, what if you and I... I mean, if you're free this Valentine's, will you be my Valentine?</p>
   <div class="gif-container">
-    <img src="https://pngtree.com/so/valentines-day" alt="Valentine's Day Image">
+    <img src="https://media3.giphy.com/media/ZP7zODs282XveerKMI/giphy.gif?cid=6c09b952lag8kkpz3k714tmh2wz5mck1sxegjd7mivscmr2e&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Valentine's Day Image">
   </div>
   <button id="yesButton" onclick="yesClicked()">Yes</button>
   <button id="noButton" onclick="noClicked()">No</button>
